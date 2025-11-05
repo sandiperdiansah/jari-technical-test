@@ -1,0 +1,20 @@
+{
+    "name": "tes-junior-fullstack",
+    "version": "1.0.0",
+    "description": "tes junior fullstack development",
+    "license": "ISC",
+    "author": "sandi perdiansah",
+    "main": "dist/main.js",
+    "scripts": {
+        "dev": "nodemon",
+        "build": "tsc && tsc-alias",
+        "start": "node dist/main.js"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10",
+        "ts-node": "^10.9.2",
+        "tsc-alias": "^1.8.16",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.9.3"
+    }
+}
