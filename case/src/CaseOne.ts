@@ -1,4 +1,4 @@
-import type { IFruit } from "@/types"
+import type { IFruit } from "@/types";
 
 const fruits: IFruit[] = [
     {
@@ -47,9 +47,13 @@ const fruits: IFruit[] = [
 
 export class CaseOne {
     // 1. Buah apa saja yang dimiliki andi?
-    public getFruits(): String[] {
+    public getFruits() {
         const unique = new Set(fruits.map((fruit) => fruit.fruitName.toLowerCase()));
-        return Array.from(unique);
+
+        return Array.from(unique).map((fruitName) => {
+            const str =  fruitName.split(' ').map((char) => char.charAt(0).toUpperCase() + char.slice(1)).join(' ');
+            return str
+        });
     }
 
     // 2. Andi memisahkan buahnya menjadi beberapa wadah berdasarkan tipe buah (fruitType). Berapa jumlah wadah yang dibutuhkan? Dan ada buah apa saja di masing-masing wadah?
