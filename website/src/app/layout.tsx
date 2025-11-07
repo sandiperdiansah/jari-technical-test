@@ -14,8 +14,8 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-    title: "title",
-    description: "description",
+    title: "Cofee Coding",
+    description: "Cofee Coding",
 };
 
 const Layout = ({ children }: Readonly<{ children: React.ReactNode }>) => {
